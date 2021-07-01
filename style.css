@@ -26,8 +26,9 @@ header {
 
 .logo{
     padding: 0px;
-    margin-right: auto;
+    /*margin-right: auto;*/
     order: 1;
+    flex:2;
 }
 .logo img{
     height: 3em;
@@ -38,6 +39,7 @@ header {
     margin: 0px;
     padding: 0px;
     order: 2;
+    flex:0;
 }
 li{
     padding-block: 2em;
@@ -61,9 +63,10 @@ li:active {
     color: #0065FC;
     margin-left: 2em;
     order: 3;
+    flex:0;
 }
 
-@media all and (max-width:768px){
+@media all and (max-width:700px){
 header{
     min-width: 310px;
 }
@@ -75,16 +78,18 @@ header {
 .navmenu{
     display: flex;
     padding-inline: 0px;
-    flex: 100%;
     order: 3;
+    justify-content: space-between;
+    flex: 1;
+    flex-basis: 100%;
 }
 li{
     list-style-type: none;
     margin: 0px;
     padding-block: 2em;
+    border-bottom: 3px #F2F2F2 solid;
     width: 100%;
     text-align: center;
-    border-bottom: 3px #F2F2F2 solid;
 }
 li:hover {
     border-top: 3px #0065fc00 solid;
@@ -98,16 +103,21 @@ li:active {
 }
 
 .signup-btn{
-    padding-top: 2em;
+    display: flex;
+    justify-content: end;
+    padding-top: 1em;
     padding-inline: 2em;
     font-weight: 700;
     color: #0065FC;
+    flex: 0 ;
+    flex-basis: 20%;
     order: 2;
 }
 .logo{
-    padding-top: 2em;
+    padding-top: 1em;
     padding-inline: 2em;
-    margin-right: auto;
+    flex-basis: 80%;
+    flex: 2;
     order: 1;
     }
 }
