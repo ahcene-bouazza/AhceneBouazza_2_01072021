@@ -6,7 +6,7 @@
 }
 body{
     font-family: 'Raleway', 'sans-serif';
-    min-width: 310px;
+    min-width: 400px;
     font-size: 0.8em;
     font-weight: 500;
     color: rgb(70, 70, 70);
@@ -82,9 +82,6 @@ li:active {
 }
 
 @media all and (max-width:700px){
-header{
-    
-}
 header {
     margin: 0px;
     padding: 0px;
@@ -146,10 +143,10 @@ li:active {
     margin-inline: auto;
     padding-inline: 2em;
     align-items: flex-start;
+    background: red;
 }
 .search_info{
-    margin-block: 0.9em ;
-}
+    margin-block: 0.9em ;}
 .search_info p,h1{
     margin-block: 0.3em;
 }
@@ -159,8 +156,9 @@ li:active {
     align-items: center;
     border: 1px solid rgb(231, 231, 231);
     border-radius: 10px;
-
+    background: rebeccapurple;
 }
+
 input{
     border: none;
     outline: none;
@@ -183,6 +181,9 @@ input{
     padding-block: 0.7em;
     background: rgb(231, 231, 231) ;
     color: black;
+}
+.search_btn-mobile{
+    display: none;
 }
 
 .box_filter{
@@ -245,8 +246,41 @@ input{
 
 @media all and (max-width:700px){
 .filter_text{
-flex: 1;
-flex-basis: 100%;}
+    flex: 1;
+    flex-basis: 100%;}
+
+.search_box{
+    width: 100%;
+    display: flex;
+}
+.search_field{
+    width: 100%;
+}
+.search_field input{
+    width: 100%;
+    }
+.search_btn{
+    display: none;
+}
+.search_btn-mobile{
+display: flex;
+padding-inline: 0.7em;
+border-bottom-right-radius: 10px;
+border-top-right-radius: 10px;
+padding-inline: 0.9em;
+padding-block: 0.9em;
+background:#0065FC ;
+color: white
+}
+.search_btn{
+    padding-inline: 0.7em;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-inline: 0.9em;
+    padding-block: 0.7em;
+    background:#0065FC ;
+    color: white;
+}
 }
 
 /* CONTENT SECTION */
@@ -254,7 +288,6 @@ flex-basis: 100%;}
     display: flex;
     max-width: 1440px;
     margin-inline: auto;
-    background-color: red;
     padding: 2em;
     justify-content: space-between;
 }
@@ -343,6 +376,8 @@ flex-basis: 100%;}
 
 /*ASIDE*/
 .aside {
+    display: flex;
+    flex-direction: column;
     background-color: #F2F2F2;
     border: solid 2px blue;
     flex-basis: 30%;
@@ -350,19 +385,23 @@ flex-basis: 100%;}
     order: 2;
     padding: 2em;
 }
+
 .aside_title{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-inline:1em;
 }
+
 .aside_main_card_container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0px;
     padding:0px;
-    background-color: red;
+    flex-basis: 100%;
 }
+
 .aside_card{
     display: flex;
     flex-wrap: nowrap;
@@ -370,24 +409,76 @@ flex-basis: 100%;}
     padding: 0.3em;
     border-radius: 15px ;
     background-color: white ;
+    margin: 1em;
+    flex: 1;
+    max-height: 140px;
+    min-width: 260px;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.089) ;
 }
+
 .aside_card_img{
     flex-basis: 40%;
     background-color: rosybrown;
 }
+
 .aside_card_info{
     padding: 0.5em;
 }
+
 .rating_aside{
     margin: 2em 0 0 0;
     color: royalblue;
     font-size: 0.7em;
 }
+
 .aside_card_img{
     border-radius: 15px 0 0 15px;
     background-size: cover;
     background-position: center;
 }
+
 .img1_aside{
     background-image: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+}
+
+@media all and (max-width:1408px)
+{
+
+.main_section{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(47, 0, 255);
+    }
+
+.aside_main_card_container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+.search_result {
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F2F2;
+        border: solid 2px blue;
+        flex-basis: 100%;
+        margin-right: 0;
+        border-radius: 15px;
+        padding: 2em;
+        order: 2;
+    }
+    
+.aside_card{
+        min-height: 100px;
+}
+
+.aside_title{
+        padding-inline: 1em;
+}
+
+.aside {
+        display: flex;
+        order: 1;
+    } 
+
 }
