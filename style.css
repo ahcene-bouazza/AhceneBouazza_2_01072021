@@ -265,8 +265,7 @@ input{
 .search_btn-mobile{
 display: flex;
 padding-inline: 0.7em;
-border-bottom-right-radius: 10px;
-border-top-right-radius: 10px;
+border-radius: 10px;
 padding-inline: 0.9em;
 padding-block: 0.9em;
 background:#0065FC ;
@@ -480,5 +479,198 @@ color: white
         display: flex;
         order: 1;
     } 
+}
+
+.Main_bottom{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1440px;
+        margin-inline: auto;
+        padding-inline: 2em;
+        justify-content: space-between;
+        background: red;
+    }
+
+.activities{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background: blue;
+        flex-basis: 100%;
+        border: 1px solid blue;
+}
+
+.left_activities{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-basis: 48%;
+        border: 1px solid violet;
+        min-width: 440px;
+
+}
+.right_activities{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        flex-basis: 48%;
+        border: 1px solid violet;
+        min-width: 440px;
+}
+
+.vieux_port{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 48%;
+    background: white;
+    border-radius: 15px;
+    height: 400px;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.089) ;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 48%;
+    border-radius: 15px;
+}
+
+.activities_img{
+        flex: 1;
+        background: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0;
+}
+
+
+.activities_title_img{
+        padding: 1em;
+}
+
+
+.left_top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 60%;
+        background: rgb(255, 255, 255);
+        border-radius: 15px;
+
+}
+.left_bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 30%;
+    background: rgb(255, 255, 255);
+    margin-top: 2em;
+    border-radius: 15px;
+}
+
+.right_top{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 40%;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+
+}
+
+.right_bottom{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+flex: 60%;
+background: rgb(255, 255, 255);
+margin-top: 2em;
+border-radius: 15px;
+}
+
+.activities_img1{
+    flex: 1;
+    background: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+.activities_img2{
+    flex: 1;
+    background: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+.activities_img3{
+    flex: 1;
+    background: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+.activities_img4{
+    flex: 1;
+    background: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+@media  all and (max-width: 950px){
+
+.left_activities{
+    flex-basis: 100%;
+    margin-bottom: 2em;
+} 
+.right_activities{
+    flex-basis: 100%;
+}
+}
+
+@media  all and (max-width: 670px){
+
+    .vieux_port{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-basis: 100%;
+        background: white;
+        border-radius: 15px;
+        height: 200px;
+        box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.089) ;
+        margin-bottom: 2em;
+    }
+    
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-basis: 100%;
+        border-radius: 15px;
+        height: 400px;
+    }
+    .left_top{
+        flex-basis: 100%; 
+    }
+    .left_bottom{
+        flex-basis: 100%; 
+    }
+    .right_top{
+        flex-basis: 100%; 
+    }
+    .right_bottom{
+        flex-basis: 100%; 
+    }
+
+
+    
+
+
+
 
 }
