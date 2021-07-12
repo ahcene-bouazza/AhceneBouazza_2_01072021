@@ -26,6 +26,11 @@ h2{
     font-weight: 700;
     color: black;
 }
+h3{
+    font-size: 1.4em ; 
+    font-weight: 700;
+    color: black;
+}
 
 
 /*HEADER*/
@@ -34,8 +39,10 @@ header {
     display: flex;
     flex-wrap: wrap;
     max-width: 1440px;
-    margin-inline: auto;
-    padding-inline: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2em;
+    padding-right: 2em;
     justify-content: space-between;
     align-items: center;
 }
@@ -61,7 +68,8 @@ li{
 
 }
 .li_header{
-    padding-block: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     margin-left: 2em;
     border-top: 2px #0065fc00 solid;
 }
@@ -92,7 +100,8 @@ header {
     
 .navmenu{
     display: flex;
-    padding-inline: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
     order: 3;
     justify-content: space-between;
     flex: 1;
@@ -101,7 +110,8 @@ header {
 .li_header{
     list-style-type: none;
     margin: 0px;
-    padding-block: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     border-bottom: 3px #F2F2F2 solid;
     width: 100%;
     text-align: center;
@@ -121,7 +131,8 @@ header {
     display: flex;
     justify-content: end;
     padding-top: 1em;
-    padding-inline: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
     font-weight: 700;
     color: #0065FC;
     flex: 0 ;
@@ -130,7 +141,8 @@ header {
 }
 .logo{
     padding-top: 1em;
-    padding-inline: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
     flex-basis: 80%;
     flex: 2;
     order: 1;
@@ -143,14 +155,18 @@ header {
     flex-direction: column;
     flex-wrap: wrap;
     max-width: 1440px;
-    margin-inline: auto;
-    padding-inline: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2em;
+    padding-right: 2em;
     align-items: flex-start;
 }
 .search_info{
-    margin-block: 0.9em ;}
+    margin-top: 0.9em ;
+    margin-bottom: 0.9em ;}
 .search_info p,h1{
-    margin-block: 0.3em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
 }
 .search_box{
     display: flex;
@@ -164,23 +180,28 @@ input {
     border: none;
     outline: none;
     font-weight: 700;
-    padding-inline: 0.7em;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
 }
 
 .search_btn{
-    padding-inline: 0.7em;
+    padding-left: 0.9em;
+    padding-right: 0.9em;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    padding-inline: 0.9em;
-    padding-block: 0.7em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
     background:#0065FC ;
     color: white;
 }
+
 .marker_icon{
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
-    padding-inline: 0.9em;
-    padding-block: 0.7em;
+    padding-left: 0.9em;
+    padding-right: 0.9em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
     background: #F2F2F2 ;
     color: black;
 }
@@ -191,9 +212,11 @@ input {
 .box_filter{
     display: flex;
     flex-wrap: wrap;
-    padding-inline: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
     max-width: 1440px;
-    margin-inline: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 1em;
     justify-content: start;
     align-items: center;
@@ -231,7 +254,8 @@ input {
     color: #DEEBFF;
 }
 .filter_item h2{
-    padding-inline:1em;
+    padding-left:1em;
+    padding-right:1em;
 }
 .filter_info{
     display: flex;
@@ -240,8 +264,10 @@ input {
     align-items: center;
     max-width: 1440px;
     margin-top: 1em;
-    margin-inline: auto;
-    padding-inline: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 .info_icon{
     display: flex;
@@ -277,32 +303,28 @@ input {
 }
 .search_btn-mobile{
     display: flex;
-    padding-inline: 0.7em;
     border-radius: 10px;
-    padding-inline: 1em;
-    padding-block: 1em;
+    padding: 1em;
     background:#0065FC ;
     color: white
 }
 .search_btn{
-    padding-inline: 0.7em;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    padding-inline: 0.9em;
-    padding-block: 0.9em;
+    padding: 0.9em;
     background:#0065FC ;
     color: white;
 }
 .marker_icon{
-    padding-inline: 0.9em;
-    padding-block: 0.9em;}
+    padding: 0.9em;}
 }
 
 /* CONTENT SECTION */
 .main_section{
     display: flex;
     max-width: 1440px;
-    margin-inline: auto;
+    margin-right: auto;
+    margin-left: auto;
     padding: 2em;
     justify-content: space-between;
 }
@@ -456,8 +478,10 @@ input {
         display: flex;
         flex-wrap: wrap;
         max-width: 1440px;
-        margin-inline: auto;
-        padding-inline: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 2em;
+        padding-right: 2em;
         justify-content: space-between;
     }
 
@@ -645,7 +669,7 @@ box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.089) ;
     }
 }
 
-@media  all and (max-width: 400px){
+@media  all and (max-width: 480px){
     .left_activities{
         min-width: 100px;
 
